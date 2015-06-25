@@ -1,0 +1,9 @@
+= Blog entries Sample Application
+
+This sample application demonstrates how Lambdamatic handles queries with projections and updates of specific fields.
+
+== How to run it
+
+Deploy on WildFly since it requires JAX-RS and CDI with a MongoDB instance running on localhost:27017 (default port). 
+
+Credits: http://startbootstrap.com/template-overviews/clean-blog/[Clean Blog] for the theme.
