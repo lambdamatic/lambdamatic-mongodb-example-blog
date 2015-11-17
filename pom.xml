@@ -51,6 +51,11 @@
 			<version>${version.dependency.lambdamatic-mongodb}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.lambdamatic</groupId>
+			<artifactId>lambdamatic-mongodb-javaee</artifactId>
+			<version>${version.dependency.lambdamatic-mongodb}</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
 			<scope>provided</scope>
