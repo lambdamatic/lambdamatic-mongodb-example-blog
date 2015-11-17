@@ -77,6 +77,7 @@ public class BlogEntryEndpoint {
 	public Response addComment(@PathParam("id") String id, @FormParam("authorName") String author, @FormParam("message") String content, @Context final HttpServletRequest httpServletRequest) {
 		final BlogEntryComment blogEntryComment = new BlogEntryComment(author, new Date(), content);
 		blogEntryCollection.filter(e -> e.id.equals(id)).forEach(e -> {
+			e.lastUpdate = new Date();
 			e.commentsNumber++;
 			e.comments.push(blogEntryComment);
 		});

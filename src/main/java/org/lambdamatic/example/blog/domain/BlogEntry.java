@@ -39,6 +39,9 @@ public class BlogEntry {
 	/** date of publication. */
 	private Date publishDate;
 	
+	/** date of last update. */
+	private Date lastUpdate;
+	
 	/** Content on the blog entry. */
 	private String content;
 	
@@ -47,6 +50,8 @@ public class BlogEntry {
 	
 	/** Number of comments */
 	private int commentsNumber;
+	
+	private int rating;
 	
 	/** list of comments. */
 	private List<BlogEntryComment> comments;
@@ -91,6 +96,14 @@ public class BlogEntry {
 	 */
 	public void setPublishDate(Date publishDate) {
 		this.publishDate = publishDate;
+	}
+	
+	public Date getLastUpdate() {
+		return lastUpdate;
+	}
+	
+	public void setLastUpdate(Date lastUpdate) {
+		this.lastUpdate = lastUpdate;
 	}
 	
 	public String getTitle() {
